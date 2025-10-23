@@ -1,0 +1,27 @@
+Maximum Subarray Sum — Kadane's Algorithm
+
+Example
+Given array: [1, 2, 3, 4, 5]
+
+All possible contiguous subarrays:
+Length 1: [1], [2], [3], [4], [5]
+Length 2: [1, 2], [2, 3], [3, 4], [4, 5]
+Length 3: [1, 2, 3], [2, 3, 4], [3, 4, 5]
+Length 4: [1, 2, 3, 4], [2, 3, 4, 5]
+Length 5: [1, 2, 3, 4, 5]
+
+Total number of contiguous subarrays for an array of length n:
+Subarrays = n * (n + 1) / 2
+
+To find the end of any subarray we have to go from start to n-1
+
+for(st = 0; st < n; st++) {
+    for(end = st; end < n; end++) {
+
+    }
+}
+
+Kadane's algorithm (purpose)
+Finds the maximum sum of any contiguous subarray in O(n) time by maintaining:
+- current_sum: maximum subarray sum ending at the current position
+- max_sum: maximum subarray sum found so far
